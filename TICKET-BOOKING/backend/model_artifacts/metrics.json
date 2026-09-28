@@ -1,0 +1,269 @@
+{
+  "model_name": "Multinomial Naive Bayes (TF-IDF + Categorical OneHot + Scaled Delay)",
+  "train_size": 19984,
+  "test_size": 4996,
+  "accuracy": 0.5114,
+  "macro_f1": 0.3175,
+  "weighted_f1": 0.6001,
+  "high_risk_recall": 0.375,
+  "high_risk_precision": 0.0079,
+  "high_risk_f1": 0.0155,
+  "class_distribution": {
+    "Low Risk": 21167,
+    "Medium Risk": 3735,
+    "High Risk": 78
+  },
+  "classification_report": {
+    "High Risk": {
+      "precision": 0.007894736842105263,
+      "recall": 0.375,
+      "f1-score": 0.015463917525773196,
+      "support": 16.0
+    },
+    "Low Risk": {
+      "precision": 0.9058240396530359,
+      "recall": 0.5180722891566265,
+      "f1-score": 0.6591523895401262,
+      "support": 4233.0
+    },
+    "Medium Risk": {
+      "precision": 0.19614325068870522,
+      "recall": 0.47657295850066933,
+      "f1-score": 0.2779078844652615,
+      "support": 747.0
+    },
+    "accuracy": 0.5114091273018415,
+    "macro avg": {
+      "precision": 0.3699540090612821,
+      "recall": 0.4565484158857653,
+      "f1-score": 0.3175080638437203,
+      "support": 4996.0
+    },
+    "weighted avg": {
+      "precision": 0.7968371665142588,
+      "recall": 0.5114091273018415,
+      "f1-score": 0.6000874053841707,
+      "support": 4996.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "High Risk",
+      "Medium Risk",
+      "Low Risk"
+    ],
+    "matrix": [
+      [
+        6,
+        8,
+        2
+      ],
+      [
+        165,
+        356,
+        226
+      ],
+      [
+        589,
+        1451,
+        2193
+      ]
+    ]
+  },
+  "informative_features": {
+    "High Risk": [
+      {
+        "feature": "Priority_Medium",
+        "log_probability": -3.349
+      },
+      {
+        "feature": "Priority_High",
+        "log_probability": -3.349
+      },
+      {
+        "feature": "Team_Technical Support",
+        "log_probability": -3.538
+      },
+      {
+        "feature": "Team_API & Integrations",
+        "log_probability": -3.772
+      },
+      {
+        "feature": "Team_Platform Engineering",
+        "log_probability": -3.84
+      },
+      {
+        "feature": "Category_Integration",
+        "log_probability": -3.992
+      },
+      {
+        "feature": "Category_Bug",
+        "log_probability": -4.171
+      },
+      {
+        "feature": "Response_Time_Scaled",
+        "log_probability": -4.224
+      },
+      {
+        "feature": "Category_Performance",
+        "log_probability": -4.274
+      },
+      {
+        "feature": "Priority_Urgent",
+        "log_probability": -4.389
+      },
+      {
+        "feature": "Team_Billing Support",
+        "log_probability": -4.389
+      },
+      {
+        "feature": "Category_Data",
+        "log_probability": -4.389
+      },
+      {
+        "feature": "Priority_Low",
+        "log_probability": -4.389
+      },
+      {
+        "feature": "Category_API",
+        "log_probability": -4.519
+      },
+      {
+        "feature": "Category_Payment",
+        "log_probability": -4.844
+      }
+    ],
+    "Low Risk": [
+      {
+        "feature": "Priority_Medium",
+        "log_probability": -2.623
+      },
+      {
+        "feature": "Team_Technical Support",
+        "log_probability": -3.152
+      },
+      {
+        "feature": "Priority_Low",
+        "log_probability": -3.277
+      },
+      {
+        "feature": "Priority_High",
+        "log_probability": -3.399
+      },
+      {
+        "feature": "Team_Billing Support",
+        "log_probability": -3.588
+      },
+      {
+        "feature": "Team_Platform Engineering",
+        "log_probability": -3.818
+      },
+      {
+        "feature": "Category_Authentication",
+        "log_probability": -3.862
+      },
+      {
+        "feature": "Team_Customer Success",
+        "log_probability": -3.877
+      },
+      {
+        "feature": "Response_Time_Scaled",
+        "log_probability": -3.932
+      },
+      {
+        "feature": "Team_Account Services",
+        "log_probability": -4.099
+      },
+      {
+        "feature": "Category_Bug",
+        "log_probability": -4.133
+      },
+      {
+        "feature": "Team_API & Integrations",
+        "log_probability": -4.139
+      },
+      {
+        "feature": "Category_Payment",
+        "log_probability": -4.19
+      },
+      {
+        "feature": "Category_Billing",
+        "log_probability": -4.246
+      },
+      {
+        "feature": "Category_Account",
+        "log_probability": -4.301
+      }
+    ],
+    "Medium Risk": [
+      {
+        "feature": "Priority_Medium",
+        "log_probability": -2.767
+      },
+      {
+        "feature": "Team_Technical Support",
+        "log_probability": -3.141
+      },
+      {
+        "feature": "Priority_High",
+        "log_probability": -3.209
+      },
+      {
+        "feature": "Team_Platform Engineering",
+        "log_probability": -3.484
+      },
+      {
+        "feature": "Priority_Low",
+        "log_probability": -3.629
+      },
+      {
+        "feature": "Team_API & Integrations",
+        "log_probability": -3.73
+      },
+      {
+        "feature": "Team_Billing Support",
+        "log_probability": -3.778
+      },
+      {
+        "feature": "Response_Time_Scaled",
+        "log_probability": -3.836
+      },
+      {
+        "feature": "Category_Bug",
+        "log_probability": -3.874
+      },
+      {
+        "feature": "Category_Integration",
+        "log_probability": -3.938
+      },
+      {
+        "feature": "Priority_Urgent",
+        "log_probability": -3.998
+      },
+      {
+        "feature": "Category_Performance",
+        "log_probability": -4.017
+      },
+      {
+        "feature": "Category_Payment",
+        "log_probability": -4.045
+      },
+      {
+        "feature": "Category_API",
+        "log_probability": -4.165
+      },
+      {
+        "feature": "Team_Customer Success",
+        "log_probability": -4.221
+      }
+    ]
+  },
+  "limitations": [
+    "Conditional Independence Assumption: Naive Bayes assumes all features (words, categories, delays) are conditionally independent given the risk class, which may overlook word context and feature interactions.",
+    "Extreme Class Imbalance: High Risk tickets represent ~0.3% to 3% of real-world support tickets, creating an inherent tradeoff between overall accuracy and minority class recall.",
+    "Non-Negative Feature Constraint: Multinomial Naive Bayes requires strictly non-negative inputs, requiring min-max scaling or one-hot discretization of numerical response times.",
+    "Vocabulary Generalization: TF-IDF features depend heavily on training terminology; novel or slang complaint phrases not in training vocabulary receive zero weight.",
+    "Correlation vs Causation: Identified high-risk indicators (e.g., 'payment timeout') highlight operational correlation with dissatisfaction, not deterministic causality.",
+    "Project-Defined Friction Score: The Support Friction Score is an operational heuristic engineered for prioritization, not a universal ISO/ITIL standard."
+  ]
+}
