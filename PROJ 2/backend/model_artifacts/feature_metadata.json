@@ -1,0 +1,35 @@
+{
+  "feature_columns": [
+    "Login_Frequency",
+    "Video_Completion",
+    "Quiz_Attempts",
+    "Assignment_Submissions",
+    "Discussion_Activity",
+    "Engagement_Score",
+    "Early_Engagement_Index",
+    "Relative_Video_Completion",
+    "Relative_Login_Frequency",
+    "Quiz_Activity_Rate",
+    "Assignment_Participation_Rate",
+    "Discussion_Participation"
+  ],
+  "feature_count": 12,
+  "class_names": [
+    "Not Completed",
+    "Completed"
+  ],
+  "feature_descriptions": {
+    "Early_Engagement_Index": "Early activity composite indicator (predicts trajectory before disengagement)",
+    "Engagement_Score": "Overall composite measure of multi-modal activity across course lifecycle",
+    "Video_Completion": "Percentage of lecture and instructional video content completed",
+    "Login_Frequency": "Total platform login occurrences during active course window",
+    "Assignment_Submissions": "Formal assessment and project submissions completed",
+    "Relative_Video_Completion": "Learner video progress compared against course-wide cohort average",
+    "Quiz_Attempts": "Formative and summative quiz participation frequency",
+    "Relative_Login_Frequency": "Login activity rate relative to specific course cohort average",
+    "Discussion_Activity": "Community forum posts, responses, and peer discussion interactions",
+    "Assignment_Participation_Rate": "Normalized submission rate relative to maximum course tasks",
+    "Quiz_Activity_Rate": "Normalized quiz attempt frequency against cohort benchmark",
+    "Discussion_Participation": "Relative forum participation index within course community"
+  }
+}

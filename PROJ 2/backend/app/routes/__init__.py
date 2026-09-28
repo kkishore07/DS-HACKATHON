@@ -1,0 +1,1 @@
+# LearnPulse AI routes package
