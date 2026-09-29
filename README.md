@@ -5,7 +5,7 @@ Welcome to the **DS-HACKATHON** project repository. This monorepo hosts two prod
 | Project | Domain | Machine Learning / Analytics Approach | Directory |
 |---|---|---|---|
 | **SupportPulse AI** | IT Support & Service Desk Operations | Multinomial Naive Bayes + TF-IDF NLP Clustering + Friction Scoring | [`TICKET-BOOKING/`](./TICKET-BOOKING) |
-| **LearnPulse AI** | EdTech & Higher Education Retention | Stratified Random Forest Classifier + Behavioral Dropout Forecasting + Automated Intervention Engine | [`PROJ 2/`](./PROJ%202) |
+| **LearnPulse AI** | EdTech & Higher Education Retention | Stratified Random Forest Classifier + Behavioral Dropout Forecasting + Automated Intervention Engine | [`LEARNING-PORTAL/`](./LEARNING-PORTAL) |
 
 ---
 
@@ -23,7 +23,7 @@ Welcome to the **DS-HACKATHON** project repository. This monorepo hosts two prod
 
 ---
 
-## 🎓 Project 2: LearnPulse AI (`PROJ 2`)
+## 🎓 Project 2: LearnPulse AI (`LEARNING-PORTAL`)
 
 **LearnPulse AI** is an enterprise-grade retention intelligence platform that continuously analyzes multi-channel learner behavior (logins, video progress, quizzes, assignments, discussions) to predict student dropout risk and trigger personalized pedagogical interventions.
 
@@ -33,7 +33,7 @@ Welcome to the **DS-HACKATHON** project repository. This monorepo hosts two prod
 - **Pedagogical Intervention Engine**: Rule-based, transparent recommendation engine prescribing tailored interventions (Academic Mentors, Peer Study Groups, Paced Schedules).
 - **Interactive Full-Stack Web Application**: FastAPI backend paired with a modern React 18 + TypeScript + Vite + TailwindCSS dashboard with real-time risk simulation.
 
-📖 [Read the complete LearnPulse AI Documentation](./PROJ%202/README.md)
+📖 [Read the complete LearnPulse AI Documentation](./LEARNING-PORTAL/README.md)
 
 ---
 
@@ -52,7 +52,7 @@ DS-HACKATHON/
 │   ├── docker-compose.yml        # Container orchestration
 │   └── README.md                 # SupportPulse AI project documentation
 │
-└── PROJ 2/                       # Project 2: LearnPulse AI
+└── LEARNING-PORTAL/              # Project 2: LearnPulse AI
     ├── backend/                  # FastAPI backend & Random Forest model service
     ├── frontend/                 # React 18 + Vite + TypeScript dashboard UI
     ├── learnpulse_ai_edtech_dropout_25000.csv # Learner benchmark dataset
@@ -75,12 +75,12 @@ uvicorn app.main:app --reload --port 8000
 ### Running LearnPulse AI:
 ```bash
 # Backend:
-cd "PROJ 2/backend"
+cd LEARNING-PORTAL/backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 
 # Frontend:
-cd "../frontend"
+cd ../frontend
 npm install
 npm run dev
 ```
