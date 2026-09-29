@@ -1,0 +1,8 @@
+{
+  "classes": [
+    "High Risk",
+    "Low Risk",
+    "Medium Risk"
+  ],
+  "feature_count": 1216
+}
