@@ -83,6 +83,11 @@ TICKET-BOOKING/
 │   ├── model_artifacts/        # Serialized pipelines and evaluation metrics
 │   ├── Dockerfile              # Container definition for backend service
 │   └── requirements.txt        # Python dependency manifest
+├── frontend/                   # React 18 + TypeScript + Vite UI client
+│   ├── src/                    # UI components, layout, and styles
+│   ├── package.json            # Node dependency manifest
+│   ├── tsconfig.json           # TypeScript configuration
+│   └── Dockerfile              # Container definition for frontend service
 ├── data/
 │   ├── raw/                    # Raw dataset repository
 │   └── processed/              # Processed feature matrices
@@ -101,37 +106,54 @@ TICKET-BOOKING/
 
 ### Prerequisites
 - Python 3.10 or higher
-- Node.js 18+ (if running frontend client)
+- Node.js 18+ and npm
+- Docker & Docker Compose (optional)
 
-### Backend Setup
+### Option A: Local Development
 
-1. **Navigate to the backend directory**:
-   ```bash
-   cd TICKET-BOOKING/backend
-   ```
+#### 1. Backend Setup
+```bash
+# Navigate to backend directory
+cd TICKET-BOOKING/backend
 
-2. **Create and activate a virtual environment**:
-   ```bash
-   python -m venv venv
-   # On Windows:
-   .\venv\Scripts\activate
-   # On Linux/macOS:
-   source venv/bin/activate
-   ```
+# Create and activate virtual environment
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On Linux/macOS:
+source venv/bin/activate
 
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-4. **Launch the FastAPI API server**:
-   ```bash
-   uvicorn app.main:app --reload --port 8000
-   ```
+# Launch FastAPI server
+uvicorn app.main:app --reload --port 8000
+```
+- Interactive Swagger UI: `http://localhost:8000/docs`
+- Interactive ReDoc: `http://localhost:8000/redoc`
 
-5. **Access Interactive API Docs**:
-   - Swagger UI: `http://localhost:8000/docs`
-   - ReDoc: `http://localhost:8000/redoc`
+#### 2. Frontend Setup
+```bash
+# Navigate to frontend directory
+cd TICKET-BOOKING/frontend
+
+# Install dependencies
+npm install
+
+# Start Vite development server
+npm run dev
+```
+- Frontend UI: `http://localhost:5173`
+
+### Option B: Docker Compose
+
+Launch both backend and frontend containers with a single command:
+```bash
+cd TICKET-BOOKING
+docker-compose up --build
+```
+- Backend API: `http://localhost:8000`
+- Frontend UI: `http://localhost:5173`
 
 ---
 

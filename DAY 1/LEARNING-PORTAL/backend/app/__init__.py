@@ -1,1 +1,0 @@
-# LearnPulse AI backend package

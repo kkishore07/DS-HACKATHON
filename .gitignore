@@ -66,3 +66,8 @@ dist-ssr/
 *.db
 *.sqlite
 *.sqlite3
+
+# Local day folders
+DAY 1/
+DAY 2/
+
